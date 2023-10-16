@@ -73,9 +73,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ###
 Bật XAMPP thì kiểm tra apache port 80
 
-###
-https://github.com/laravel/lumen
+#https://github.com/laravel/lumen
 -> vô public -> copy 
 
-###
-https://github.com/durgesh-sahani/
+#https://github.com/durgesh-sahani/
