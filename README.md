@@ -68,3 +68,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+###
+Bật XAMPP thì kiểm tra apache port 80
+
+###
+https://github.com/laravel/lumen
+-> vô public -> copy 
+
+###
+https://github.com/durgesh-sahani/
