@@ -2,8 +2,8 @@ import axios from "axios"
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 export default function ListUser()  {
-
     const[users, setUsers] = useState([]);
+
     useEffect(() => {
         getUsers();
     }, []);
@@ -15,6 +15,7 @@ export default function ListUser()  {
                 setUsers(response.data);
         });
     }
+    
     return  (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <table >
@@ -37,7 +38,7 @@ export default function ListUser()  {
                             <td>{user.email}</td>
                             <td>{user.mobile}</td>
                             <td>
-                                <Link to={`users/${user.id}/edit`}/>
+                                <Link to={`user/${user.id}/edit`} style={{marginRight:"10px"}}>Edit</Link>
                                 <button>Delete</button>
                             </td>
                         </tr>
