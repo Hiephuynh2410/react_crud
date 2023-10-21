@@ -15,7 +15,13 @@ export default function ListUser()  {
                 setUsers(response.data);
         });
     }
-    
+
+    const deleteUser= (id) => {
+        axios.delete(`http://localhost:80/api/user/${id}/delete`).then(function (response) {
+            console.log(response.data);
+            getUsers();
+        });
+    }
     return  (
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <table >
@@ -39,7 +45,7 @@ export default function ListUser()  {
                             <td>{user.mobile}</td>
                             <td>
                                 <Link to={`user/${user.id}/edit`} style={{marginRight:"10px"}}>Edit</Link>
-                                <button>Delete</button>
+                                <button onClick={() => deleteUser(user.id)}>Delete</button>
                             </td>
                         </tr>
                     )}
